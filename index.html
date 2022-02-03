@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="text-[.7rem] 2xl:text-[1rem]">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer type="module" src="/src/main.ts"></script>
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div class="flex flex-col bg-register h-screen bg-cover p-4 bg-no-repeat bg-center bg-[#E9FBFF]">
+    <img class="mx-auto max-w-[12rem]" src="./assets/logo.png" alt="owards logo">
+    <form class="w-full max-w-3xl my-6 mx-auto mb-4 rounded-3xl px-10 py-16 bg-white">
+      <h1 class="text-[#142E47] text-5xl text-center font-bold uppercase">Sign in</h1>
+      <div class="mx-auto text-xl max-w-xl">
+        <label class="flex mx-auto bg-[#F1F1F1] py-6 px-8 mt-12 rounded-full input-container">
+          <img class="w-7" src="./assets/profile.png" alt="profile email input image">
+          <!-- :focus { outline: 0 !important; } -->
+          <input class="ml-4 !outline-none w-full bg-transparent flex-auto" type="text" placeholder="Enter the email">
+        </label>
+        <label class="flex mx-auto bg-[#F1F1F1] py-6 px-8 mt-6 rounded-full input-container">
+          <img class="w-6" src="./assets/lock.png" alt="lock image for password input">
+          <input class="ml-4 !outline-none w-full bg-transparent flex-auto" type="text" placeholder="Password">
+        </label>
+        <button
+          class="mt-6 p-5 w-full rounded-full font-bold text-2xl uppercase text-white bg-primary hover:opacity-80 transition"
+          type="button">
+          Sign in
+        </button>
+        <button
+          class="flex justify-center items-center mt-6 p-5 w-full rounded-full font-bold text-2xl uppercase text-white bg-[#3479EA] hover:opacity-80 transition-opacity"
+          type="button">
+          <img class="max-h-[2rem] sm:pr-6" src="./assets/facebook.png" alt="facebook logo">
+          &nbsp;
+          LOGIN with facebook
+        </button>
+        <div class="flex justify-between mt-12 text-sm">
+          <a href="#" class="hover:text-primary">Forgot Password?</a>
+          <p>
+            New here?
+            <a href="#" class="text-primary">Sign up!</a>
+          </p>
+        </div>
+      </div>
+    </form>
+    <footer class="flex flex-wrap mt-auto mx-auto text-light text-center gap-8">
+      <div class="flex gap-8 ">
+        <a class="hover:text-primary" href="#">Privacy Policy</a>|
+        <a class="hover:text-primary" href="#">Terms and Conditions</a>
+      </div>|
+      <div class="flex gap-8">
+        <a class="hover:text-primary" href="#">© 2018 - 2021 Owards</a>|
+        <a class="hover:text-primary" href="#">All Rights Reserved</a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
