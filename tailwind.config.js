@@ -6,7 +6,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        register: "url('./assets/bg.png')",
+        register: "url('./public/bg.png')",
       },
       colors: {
         primary: {
